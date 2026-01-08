@@ -21,6 +21,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/urls")
 @AllArgsConstructor
+@CrossOrigin
 public class UrlMappingController {
 
     private UrlMappingService urlMappingService;
