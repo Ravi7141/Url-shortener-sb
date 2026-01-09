@@ -2,8 +2,6 @@
 
 A modern, full-stack URL shortening application with analytics dashboard built with **Spring Boot** and **React**.
 
-![Landing Page](screenshots/landing-page.png)
-
 ## Features
 
 - 🔗 **URL Shortening** - Create short, memorable links instantly
@@ -14,8 +12,38 @@ A modern, full-stack URL shortening application with analytics dashboard built w
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+<div align="center">
+  <img src="screenshots/landing-page.png" alt="Landing Page" width="800"/>
+  <p><em>Landing Page</em></p>
+</div>
+
+&nbsp;
+
+<div align="center">
+  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
+  <p><em>Dashboard</em></p>
+</div>
+
+&nbsp;
+
+<div align="center">
+  <img src="screenshots/analytics.png" alt="Analytics Dashboard" width="800"/>
+  <p><em>Analytics Dashboard</em></p>
+</div>
+
+&nbsp;
+
+<div align="center">
+  <img src="screenshots/mylinks.png" alt="My URLs" width="800"/>
+  <p><em>My URLs Management</em></p>
+</div>
+
+&nbsp;
+
+<div align="center">
+  <img src="screenshots/register.png" alt="Registration Page" width="800"/>
+  <p><em>Registration Page</em></p>
+</div>
 
 ## Tech Stack
 
@@ -126,10 +154,6 @@ Url-shortener-sb/
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 
