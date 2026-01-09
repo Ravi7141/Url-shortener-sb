@@ -1,0 +1,139 @@
+.landing-page {
+    min-height: 100vh;
+    position: relative;
+    background: transparent;
+    padding-top: 80px;
+    /* Account for fixed navbar */
+}
+
+.landing-content {
+    position: relative;
+    z-index: 1;
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.1;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-2xl);
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.features-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    background: linear-gradient(135deg, #B19EEF 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    background: rgba(177, 158, 239, 0.05);
+    border: 1px solid rgba(177, 158, 239, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    border-color: rgba(177, 158, 239, 0.4);
+    background: rgba(177, 158, 239, 0.1);
+}
+
+.feature-icon {
+    color: #B19EEF;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.feature-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.cta-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.cta-card {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    background: rgba(177, 158, 239, 0.08);
+    border: 1px solid rgba(177, 158, 239, 0.2);
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-description {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .landing-page {
+        padding-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,115 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    font-family: inherit;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Sizes */
+.btn-sm {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+}
+
+.btn-md {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1rem;
+}
+
+.btn-lg {
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    font-size: 1.125rem;
+}
+
+/* Variants */
+.btn-primary {
+    background: linear-gradient(135deg, #B19EEF 0%, #a855f7 100%);
+    color: #0c0814;
+    box-shadow: 0 4px 15px rgba(177, 158, 239, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(177, 158, 239, 0.5);
+}
+
+.btn-secondary {
+    background: rgba(177, 158, 239, 0.1);
+    backdrop-filter: blur(10px);
+    color: var(--color-text-primary);
+    border: 1px solid rgba(177, 158, 239, 0.2);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    border-color: #B19EEF;
+    box-shadow: 0 0 20px rgba(177, 158, 239, 0.3);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #B19EEF;
+    border: 1px solid transparent;
+}
+
+.btn-ghost:hover:not(:disabled) {
+    background: rgba(177, 158, 239, 0.1);
+    border-color: rgba(177, 158, 239, 0.3);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--color-error) 0%, var(--color-accent) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn-danger:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
+
+/* Loading Spinner */
+.btn-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

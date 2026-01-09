@@ -1,0 +1,115 @@
+.myurls-page {
+    min-height: 100vh;
+    padding: 120px var(--spacing-lg) var(--spacing-3xl);
+    background: transparent;
+}
+
+.myurls-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.myurls-header {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.header-icon {
+    color: #B19EEF;
+    margin-bottom: var(--spacing-lg);
+}
+
+.myurls-title {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.myurls-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+}
+
+.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    margin: var(--spacing-3xl) 0;
+}
+
+.empty-icon {
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.empty-state h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.empty-state p {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.empty-link {
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.empty-link:hover {
+    color: var(--color-primary-light);
+}
+
+.urls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.urls-stats {
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.stats-text {
+    color: var(--color-text-tertiary);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .myurls-title {
+        font-size: 2rem;
+    }
+
+    .myurls-subtitle {
+        font-size: 1rem;
+    }
+
+    .urls-grid {
+        grid-template-columns: 1fr;
+    }
+}

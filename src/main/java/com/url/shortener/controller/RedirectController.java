@@ -16,14 +16,13 @@ public class RedirectController {
     private UrlMappingService urlMappingService;
 
     @GetMapping("/{shortUrl}")
-    public ResponseEntity<Void> rediret(@PathVariable String shortUrl){
+    public ResponseEntity<Void> rediret(@PathVariable String shortUrl) {
         UrlMapping urlMapping = urlMappingService.getOriginalUrl(shortUrl);
-        if(urlMapping != null){
+        if (urlMapping != null) {
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add("Location", urlMapping.getOriginalUrl());
             return ResponseEntity.status(302).headers(httpHeaders).build();
-        }
-        else{
+        } else {
             return ResponseEntity.notFound().build();
         }
     }
