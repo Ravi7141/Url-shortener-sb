@@ -20,15 +20,15 @@ A modern, full-stack URL shortening application with analytics dashboard built w
 &nbsp;
 
 <div align="center">
-  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
-  <p><em>Dashboard</em></p>
+  <img src="screenshots/register.png" alt="Registration Page" width="800"/>
+  <p><em>Registration Page</em></p>
 </div>
 
 &nbsp;
 
 <div align="center">
-  <img src="screenshots/analytics.png" alt="Analytics Dashboard" width="800"/>
-  <p><em>Analytics Dashboard</em></p>
+  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
+  <p><em>Dashboard</em></p>
 </div>
 
 &nbsp;
@@ -41,8 +41,8 @@ A modern, full-stack URL shortening application with analytics dashboard built w
 &nbsp;
 
 <div align="center">
-  <img src="screenshots/register.png" alt="Registration Page" width="800"/>
-  <p><em>Registration Page</em></p>
+  <img src="screenshots/analytics.png" alt="Analytics Dashboard" width="800"/>
+  <p><em>Analytics Dashboard</em></p>
 </div>
 
 ## Tech Stack
@@ -157,4 +157,4 @@ Url-shortener-sb/
 
 ## Author
 
-**Ravi** - [GitHub](https://github.com/Ravi7141)
+**Ravi Rajput** - [GitHub](https://github.com/Ravi7141)
